@@ -1,0 +1,196 @@
+.section-container {
+    height: 30vw;
+}
+
+.mail-loading img{
+    height: 60px;
+    width: auto;
+    opacity: 0.3;
+}
+
+.section-form {
+    margin : 50px;
+    padding: 0px;
+    position: relative;
+}
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.label {
+    font-size: 40px;
+}
+
+.form-title {
+    font-size: 50px;
+    padding: 30px;
+    margin-top: 30px;
+    
+}
+.title {
+    margin-top: 25px;
+    padding: 50px;
+}
+.form-label {
+    font-size: 20px;
+}
+ 
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		/*margin: 1% 0 1% 0%;*/
+        margin: 0;
+	}
+}
+
+
+/*  GRID OF TWO   ============================================================================= */
+
+
+.span-2-of-2 {
+	width: 100%;
+}
+
+.span-1-of-2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span-2-of-2 {
+		width: 100%; 
+	}
+	.span-1-of-2 {
+		width: 100%; 
+	}
+}
+
+
+/*  GRID OF THREE   ============================================================================= */
+
+	
+.span-3-of-3 {
+	width: 100%; 
+}
+
+.span-2-of-3 {
+	width: 66.13%; 
+}
+
+.span-1-of-3 {
+	width: 32.26%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span-3-of-3 {
+		width: 100%; 
+	}
+	.span-2-of-3 {
+		width: 100%; 
+	}
+	.span-1-of-3 {
+		width: 100%;
+	}
+}
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
